@@ -19,6 +19,9 @@ def capture_and_send():
         _, img_encoded = cv2.imencode('.jpg', frame)
         response = requests.post(config.JUDGING_SERVICE_URL, files={'image': img_encoded.tobytes()})
         
+        response = requests.post(config.LLM_SERVICE_URL, files={'image': img_encoded.tobytes()})
+        
+        
         print(f"Sent image to judging service. Response: {response.text}")
 
         time.sleep(config.CAPTURE_INTERVAL)  # Wait before capturing the next frame
