@@ -2,11 +2,11 @@ import cv2
 import numpy as np
 
 # Load the image
-image_path = r"C:\Users\Erin Helga D'Silva\OneDrive\Desktop\traffic_signal_project\images\traffic.png"
+image_path = r"images\traffic.png"
 image = cv2.imread(image_path)
 
 # Load Haar Cascade Classifier
-cascade_path = r"C:\Users\Erin Helga D'Silva\OneDrive\Desktop\traffic_signal_project\models\haarcascade_car.xml"
+cascade_path = r"models\haarcascade_car.xml"
 car_cascade = cv2.CascadeClassifier(cascade_path)
 
 if image is None:
