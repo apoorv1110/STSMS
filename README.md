@@ -109,5 +109,110 @@ python3 capture_service/run_capture.py
 
 ## *Future Enhancements*
 - *Expanded Missing Persons Database* – To assist in rescue operations.
-- 
+  
 ![WhatsApp Image 2025-02-14 at 02 21 48_69ea89cf](https://github.com/user-attachments/assets/cd1024f2-877f-436d-ac68-c6929dc94195)
+
+## *Ambulance Management Module*
+
+### *Overview*
+
+The *Ambulance Management Module* ensures emergency vehicle prioritization at intersections using AI-based detection and real-time traffic signal control.
+
+### *Technology Stack*
+
+- *Ambulance Detection*: YOLO-based object detection.
+- *Traffic Signal Control*: AI-driven dynamic light adjustment.
+- *Communication Module*: Flask API for signal updates.
+
+### *System Components*
+
+#### *1. Camera & Sensor Module*
+
+- Captures live traffic footage.
+- Uses AI to detect ambulances in real time.
+
+#### *2. Traffic Signal Control System*
+
+- Adjusts signals dynamically to allow ambulance passage.
+- Holds non-emergency vehicles for 10 seconds.
+- Notifies upcoming intersections to clear the path.
+
+#### *3. Communication Module*
+
+- Updates traffic status via a centralized server.
+- Uses Flask API for real-time signal adjustments.
+
+### *Workflow Summary*
+
+1. *Camera Module* detects ambulances in real-time using YOLO.
+2. *Traffic Signal Control System* adjusts lights accordingly.
+3. *Nearby intersections* receive alerts to prepare for the ambulance.
+4. *Non-emergency vehicles* are held for 10 seconds.
+
+### *How to Run*
+
+bash
+cd Ambulance_management-System
+python3 ambulance_detector.py
+
+
+### *Key Features*
+
+✅ *Real-time Ambulance Detection* – Instantly identifies ambulances.
+✅ *Automated Signal Adjustment* – Prioritizes emergency vehicles.
+✅ *Path Clearance System* – Holds non-emergency vehicles temporarily.
+✅ *API-based Integration* – Ensures smooth system communication.
+
+![WhatsApp Image 2025-02-14 at 02 21 49_03363422](https://github.com/user-attachments/assets/e841cb3d-0403-45dd-86db-e2741ef7ad6c)
+
+
+## *Traffic Signal Control Module*
+
+### *Overview*
+
+The *Traffic Signal Control Module* dynamically adjusts traffic lights based on real-time vehicle density and emergency vehicle detection. It optimizes traffic flow, reduces congestion, and ensures smooth passage for ambulances.
+
+### *Technology Stack*
+
+- *Traffic Density Analysis*: AI-based monitoring using OpenCV and YOLO.
+- *Signal Timing Optimization*: Dynamic adjustments using ML models.
+- *Emergency Vehicle Priority*: Integrated with Ambulance Management System.
+- *Backend*: Flask API for real-time updates.
+- *Database*: PostgreSQL / MySQL for traffic data storage.
+
+### *System Components*
+
+#### *1. Camera & Sensor Module*
+
+- Analyzes real-time traffic density.
+- Detects emergency vehicles and adjusts signals accordingly.
+
+#### *2. Signal Optimization System*
+
+- Adjusts light durations based on congestion levels.
+- Extends green signals for ambulances.
+- Reduces wait times at busy intersections.
+
+### *Workflow Summary*
+
+1. *Camera Module* captures real-time traffic footage.
+2. *AI-powered Signal Optimization* analyzes traffic density and emergency vehicle presence.
+3. *Signal Timing Adjustment* dynamically modifies traffic light durations.
+4. *Emergency Priority Activation* extends green signals for ambulances.
+5. *Live Updates Sent* to other intersections to ensure smooth traffic flow.
+
+### *How to Run*
+
+bash
+cd Traffic Management System
+python3 main.py
+
+
+### *Key Features*
+
+✅ *AI-powered Traffic Monitoring* – Real-time congestion analysis.
+✅ *Dynamic Signal Adjustment* – Reduces congestion and improves flow.
+✅ *Emergency Vehicle Priority* – Ensures smooth passage for ambulances.
+
+![WhatsApp Image 2025-02-14 at 02 21 48_64e3d985](https://github.com/user-attachments/assets/582a5d57-4d4b-41a3-a9b8-0350b339b95c)
+
