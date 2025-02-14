@@ -35,7 +35,7 @@ The *Street Safety Management System* is an AI-powered solution designed to enha
 - *Face Recognition:* OpenCV and Deep Learning Models (Python-based real-time detection and matching)
 - *Incident Detection:* LLM integrated with Flask (AI-based classification of incidents)
 - *Backend:* Flask for API development
-- *Database:* PostgreSQL / MySQL for storing wanted persons and incident reports
+- *Database:* MySQL for storing wanted persons and incident reports
 
 ## *System Components*
 
@@ -70,30 +70,30 @@ The *Street Safety Management System* is an AI-powered solution designed to enha
 
 ## *How to Run*
 ### *1. Clone the Repository*
-bash
+```bash
 git clone https://github.com/apoorv1110/STSMS.git
 cd Street-Safety-Management-System
-
+```
 
 ### *2. Start the LLM Service*
-bash
+```bash
 python3 llm_service.py
-
+```
 
 ### *3. Run the Face Recognition System*
-bash
+```bash
 python3 judging_service/run_judge.py
-
+```
 
 ### *4. Start the Incident Detection Module*
-bash
+```bash
 python3 LLM.py
-
+```
 
 ### *5. Run the Camera Capture Service*
-bash
+```bash
 python3 capture_service/run_capture.py
-
+```
 
 ## *System Execution Flow*
 - The *camera* captures images in real time.
@@ -103,8 +103,11 @@ python3 capture_service/run_capture.py
 
 ## *Key Features*
 ✅ *Real-time Face Recognition with OpenCV* – Identifies wanted persons instantly.
+
 ✅ *AI-powered Incident Detection with LLM + Flask* – Classifies incidents in real-time.
+
 ✅ *Automated Police Alerts* – Notifies law enforcement of emergencies.
+
 ✅ *REST API Integration* – Ensures smooth communication between different modules.
 
 ## *Future Enhancements*
@@ -151,16 +154,18 @@ The *Ambulance Management Module* ensures emergency vehicle prioritization at in
 
 ### *How to Run*
 
-bash
+```bash
 cd Ambulance_management-System
 python3 ambulance_detector.py
+```
 
-
-### *Key Features*
-
+## *Key Features*
 ✅ *Real-time Ambulance Detection* – Instantly identifies ambulances.
+
 ✅ *Automated Signal Adjustment* – Prioritizes emergency vehicles.
+
 ✅ *Path Clearance System* – Holds non-emergency vehicles temporarily.
+
 ✅ *API-based Integration* – Ensures smooth system communication.
 
 ![WhatsApp Image 2025-02-14 at 02 21 49_03363422](https://github.com/user-attachments/assets/e841cb3d-0403-45dd-86db-e2741ef7ad6c)
@@ -203,16 +208,18 @@ The *Traffic Signal Control Module* dynamically adjusts traffic lights based on 
 
 ### *How to Run*
 
-bash
+```bash
 cd Traffic Management System
 python3 main.py
-
+```
 
 ### *Key Features*
 
 ✅ *AI-powered Traffic Monitoring* – Real-time congestion analysis.
+
 ✅ *Dynamic Signal Adjustment* – Reduces congestion and improves flow.
-✅ *Emergency Vehicle Priority* – Ensures smooth passage for ambulances.
+
+✅ *Emergency Vehicle Priority* – Ensures smooth passage for ambulances
 
 ![WhatsApp Image 2025-02-14 at 02 21 48_64e3d985](https://github.com/user-attachments/assets/582a5d57-4d4b-41a3-a9b8-0350b339b95c)
 
