@@ -1,0 +1,5 @@
+opencv-python
+requests
+dlib
+numpy
+flask
