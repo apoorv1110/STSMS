@@ -10,11 +10,11 @@ STSMS is an AI-powered system designed to enhance *street safety , ambulance pri
 
 ### *🚑 Ambulance Management System*
 - Detects ambulances at intersections.
-- Adjusts traffic signals dynamically to prioritize emergency vehicles.
+- Adjusts traffic signals dynamically to prioritize emergency vehicles to save lives.
 
 ### *🚦 Traffic Management System*
 - Analyzes vehicle density using AI-driven traffic monitoring.
-- Optimizes signal timing to reduce congestion and improve flow.
+- Optimizes signal timing to reduce congestion and improve traffic flow.
 
 ## *Technology Stack*
 - *Computer Vision & AI:* OpenCV, Deep Learning Models.
